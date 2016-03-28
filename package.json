@@ -1,0 +1,20 @@
+{
+    "name": "hunspell-spellcheck",
+    "version": "0.0.1",
+    "description": "Spellchecker for Node using Hunspell",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andrehrf/hunspell-spellcheck.git"
+    },
+    "keywords": [
+        "spellchecker",
+        "hunspell"
+    ],
+    "author": "André Ferreira <andrehrf@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/andrehrf/hunspell-spellcheck/issues"
+    },
+    "homepage": "https://github.com/andrehrf/hunspell-spellcheck"
+}
