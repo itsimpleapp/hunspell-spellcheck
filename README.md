@@ -6,7 +6,7 @@ Spellchecker for Node using Hunspell
 
   Install Huspell:
 
-    $ sudo pm install hunspell-spellcheck
+    $ sudo apt-get install hunspell-spellcheck
 
   Install with [npm](http://npmjs.org):
 
