@@ -1,6 +1,6 @@
 {
     "name": "hunspell-spellcheck",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Spellchecker for Node using Hunspell",
     "main": "index.js",
     "repository": {

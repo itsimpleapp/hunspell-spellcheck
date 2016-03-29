@@ -10,7 +10,7 @@ module.exports = function(lang){
         
         check: function(word){
             try{
-                var r = execSync('echo "'+word+'" | hunspell -d '+this.lang, {timeout: -1}).toString();
+                var r = execSync('echo "'+word+'" | hunspell -d '+this.lang).toString();
                 var rl = r.split("\n");
                 return (rl[1].substr(0, 1) === "+");
             }
@@ -21,7 +21,7 @@ module.exports = function(lang){
         
         suggestion: function(word){
             try{
-                var r = execSync('echo "'+word+'" | hunspell -d '+this.lang, {timeout: -1}).toString();
+                var r = execSync('echo "'+word+'" | hunspell -d '+this.lang).toString();
                 var rl = r.split("\n");
                 var rt = {};
 
