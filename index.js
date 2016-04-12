@@ -9,6 +9,9 @@ module.exports = function(lang){
         lang: lang,
         
         check: function(word){
+            if(typeof word === "string")
+                word = word.replace(/\"|'/g, "");
+            
             try{
                 var r = execSync('echo "'+word+'" | hunspell -d '+this.lang).toString();
                 var rl = r.split("\n");
@@ -20,6 +23,9 @@ module.exports = function(lang){
         },
         
         suggestion: function(word){
+            if(typeof word === "string")
+                word = word.replace(/\"|'/g, "");
+            
             try{
                 var r = execSync('echo "'+word+'" | hunspell -d '+this.lang).toString();
                 var rl = r.split("\n");
